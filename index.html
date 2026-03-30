@@ -67,6 +67,28 @@
             <p>Você pode entrar em contato comigo através do email: <a
                     href="mailto:abranjo.ramos@gmail.com">abranjo.ramos@gmail.com</a><br>
                 Telefone: <a href="tel:+5547999092616">(47) 99909-2616</a></p>
+
+            <form action="">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Informação</option>
+                    <option value="duvida">Sugestão</option>
+                    <option value="outro">Dúvida</option>
+                </select>
+                <br <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" cols="30" rows="10" required></textarea><br>
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro das novidades, projetos e dicas
+                    sobre tecnologia, carreira e desenvolvimento pessoal. Inscreva-se para receber atualizações
+                    diretamente no seu email</label><br>
+                <input type="submit" value="Enviar mensagem">
+            </form>
         </section>
     </footer>
 </body>
