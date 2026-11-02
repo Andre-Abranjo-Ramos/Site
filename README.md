@@ -1,73 +1,97 @@
-# Olá, eu sou o André Abranjo Ramos
+# André Abranjo Ramos — Site Pessoal
 
-### Apaixonado por transformar dados brutos em insights e histórias impactantes.
+Site pessoal de André Abranjo Ramos, Engenheiro de Dados na Karsten S.A.
 
-Sempre fui fascinado pela forma como os dados moldam o mundo ao nosso redor. Para mim, o universo dos dados não é apenas sobre números, linhas ou códigos; é sobre descobrir padrões ocultos, resolver problemas complexos e criar soluções que geram valor real. Estou em constante evolução, explorando desde a engenharia de dados até o storytelling com visualizações.
-
----
-
-## Meu Universo de Dados
-
-- **Cultura Data-Driven:** Acredito no poder das decisões baseadas em evidências.
-- **Resolução de Problemas:** Enxergo cada dataset bagunçado como um quebra-cabeça esperando para ser resolvido.
-- **Visualização de Impacto:** Traduzo dados técnicos para que qualquer pessoa consiga entender.
-- **Aprendizado Contínuo:** Fascinado por novas ferramentas, IA, machine learning e arquiteturas de dados.
+**URL:** [andre-abranjo-ramos.github.io/Site](https://andre-abranjo-ramos.github.io/Site/)
 
 ---
 
-## Algumas Ferramentas e Tecnologias
+## Sobre o site
 
-<table>
-  <tr>
-    <td align="center" width="120">
-      <img src="https://skillicons.dev" width="40" height="40" alt="Python" />
-      <!-- Se não usar Python, pode trocar o ícone usando o skillicons.dev -->
-      <br />Python
-    </td>
-    <td align="center" width="120">
-      <img src="https://skillicons.dev" width="40" height="40" alt="Qliksence" />
-      <br />Qliksence
-    </td>
-    <td align="center" width="120">
-      <img src="https://skillicons.dev" width="40" height="40" alt="SQL" />
-      <br />SQL
-    </td>
-     <td align="center" width="120">
-      <img src="https://skillicons.dev" width="40" height="40" alt="Power BI" />
-      <br />Power BI
-    </td>
-    <td align="center" width="120">
-      <img src="https://skillicons.dev" width="40" height="40" alt="Git" />
-      <br />Git
-    </td>
-    <td align="center" width="120">
-      <img src="https://skillicons.dev" width="40" height="40" alt="Excel" />
-      <br />Excel
-    </td>
-  </tr>
-</table>
+Site em construção forever hospedado no GitHub Pages, construído com HTML, CSS e JavaScript.
+
+Documenta a trajetória profissional, o stack técnico atual e os projetos públicos de André, com foco no aprendizado constante.
 
 ---
 
-##  Projetos em Destaque (em elaboração)
+## Estrutura de arquivos
 
-Aqui estão alguns projetos onde apliquei minha paixão por dados:
-
-***[Classificação de Clientes Ecommerce]:** TCC apresentado na conclusão do Curso de MBA realizado na FIA de SP.
-
-
----
-
-## Vamos conectar e conversar sobre dados?
-
-Seja para trocar ideias sobre projetos, discutir novas tecnologias ou falar sobre o mercado de dados:
-
-[![LinkedIn](https://shields.io)](https://www.linkedin.com/in/andre-abranjo-ramos/)
-[![E-mail](https://shields.io)](mailto:abranjo.ramos@gmail.com)
-
+```
+Site/
+├── index.html          # Markup principal
+├── assets/
+│   ├── style.css      # Todo o CSS (design tokens, layout, componentes)
+│   ├── app.js          # Comportamentos: menu mobile, filtro de projetos, ano no footer
+│   └── foto-andre.jpg  # Foto de perfil (adicionar manualmente)
+└── README.md
+```
 
 ---
 
-<p align="center">
-  <i>"Se joga no mundo que ele aguenta." – André Buric</i>
-</p>
+## Stack técnico do site
+
+- **HTML5** semântico
+- **CSS** com custom properties (design tokens no `:root`)
+- **JavaScript** vanilla — menu mobile, filtro de projetos, ano dinâmico no footer
+- **Fontes:** Inter · Space Grotesk · JetBrains Mono (Google Fonts)
+
+---
+
+## Identidade visual
+
+Paleta de cores
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `--bg` | `#0f1f25` | Fundo principal |
+| `--bg-alt` | `#132830` | Seções alternadas |
+| `--surface` | `#1a323b` | Cartões |
+| `--accent` | `#e67f66` | Destaque, botões, linha do tempo |
+| `--accent-2` | `#d6c7a1` | Números em areia |
+| `--text` | `#eeede9` | Texto principal ("oat") |
+
+---
+
+## Seções
+
+| Seção | Conteúdo |
+|-------|----------|
+| **Início (hero)** | Posicionamento, stack, links sociais |
+| **Sobre** | Trajetória, perfil rápido, habilidades |
+| **Experiência** | Linha do tempo 2001–presente + formação |
+| **Projetos** | Portfólio público com filtro por categoria |
+| **Atuação** | Áreas de dedicação atual |
+| **Contato** | LinkedIn, GitHub, e-mail |
+
+---
+
+## Projetos públicos referenciados
+
+- [Visualização de Dados — Módulo 2 (SENAI SCTEC)](https://github.com/Andre-Abranjo-Ramos/turma02-visualizacao-dados-Projeto-modulo-02)
+
+---
+
+## Histórico de versões
+
+| Versão | Data | O que mudou |
+|--------|------|-------------|
+| `v0.1` | Out 2026 | Primeira versão: estrutura HTML básica, seções Sobre / Projetos / Contato |
+| `v0.2` | Nov 2026 | Nova paleta de cores aplicada; fontes Inter + Space Grotesk + JetBrains Mono; textos atualizados; atualização dos projetos |
+
+---
+
+## Como rodar localmente
+
+Abra `index.html` diretamente no navegador — não precisa de servidor.
+
+Para ver com live-reload no VS Code: extensão **Live Server** → botão "Go Live" na barra inferior.
+
+---
+
+## Próximos passos planejados
+
+- [ ] Atualizar foto de perfil (`assets/foto-andre.jpg`)
+- [ ] Badge do curso em andamento da Databricks Fundamentals
+- [ ] Badge do curso em andamento EXIN DevOps Professional
+- [ ] Atualização da Seção das certificações
+- [ ] Repositório `databricks-delta-lake-basics` projeto em andamento

@@ -1,141 +1,429 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>André</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>André Abranjo Ramos — Engenheiro de Dados</title>
+  <meta name="description" content="Engenheiro de Dados com foco em Databricks, Delta Lake e IA aplicada ao negócio. Blumenau · Santa Catarina · Brasil.">
+
+  <meta property="og:title" content="André Abranjo Ramos — Engenheiro de Dados">
+  <meta property="og:description" content="Databricks, Delta Lake e IA aplicada ao negócio.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
 </head>
-
 <body>
-    <h1>André</h1>
 
-    <nav> <!--Seção de navegação do site.-->
-        <ul> <!-- lista não ordenada para links do site.-->
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Sobre mim</h2>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
 
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHqPq_nvru7MQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719417038262?e=1776297600&v=beta&t=oFNyvSjXOP9VXIglw75uRfxJVRJfwoE6XWt9zPXBtzQ"
-            alt="Foto de André" width="200" height="200">
+  <header class="nav" id="topo">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="#topo">André Abranjo Ramos</a>
 
-        <article>
-            <p>Olá! Meu nome é André e sou um apaixonado por apreender sempre. Sou pai do Emanuel e casado com a
-                Juliana. Gosto de futebol e torcedor do Flamengo. Gosto de ler ler livros. Sempre fui fascinado pela forma como os dados moldam o mundo ao nosso redor. Para mim, o universo dos dados não é apenas sobre números, 
-                linhas ou códigos; é sobre descobrir padrões ocultos, resolver problemas complexos e criar soluções que gerem valor real. Estou em constante evolução, explorando desde a engenharia de dados até o storytelling com visualizações.
+      <button class="nav-toggle btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
 
-</p>
-        </article>
+      <nav class="nav-menu" id="menu" aria-label="Principal">
+        <a class="lnk" href="#inicio">Início</a>
+        <a class="lnk" href="#sobre">Sobre</a>
+        <a class="lnk" href="#experiencia">Experiência</a>
+        <a class="lnk" href="#projetos">Projetos</a>
+        <a class="lnk" href="#atuacao">Atuação</a>
+        <a class="lnk" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-        <aside>
+  <main id="main">
 
-            <h3>Habilidades</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Git</li>
-                <li>Excel</li>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <p class="t2 hero-hello">Olá, seja bem-vindo!</p>
+        <h1 class="h1">Sou <span class="accent">André Abranjo Ramos</span></h1>
+        <p class="t1 hero-role">Engenheiro de Dados</p>
+        <p class="t2 hero-stack">Databricks · Delta Lake · IA aplicada ao negócio</p>
+
+        <p class="t2 hero-pitch">
+          25 anos construindo conhecimento dentro da Karsten S.A. — da produção à controladoria,
+          do planejamento à análise de dados. Desde agosto de 2026 na área de TI, transformando
+          esse contexto de negócio em Data Lake, pipelines e inteligência aplicada.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#sobre">Sobre mim</a>
+          <a class="btn btn-ghost" href="#projetos">Ver projetos</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-num">25</span>
+            <span class="t2">anos de casa na Karsten</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2026</span>
+            <span class="t2">chegada à Engenharia de Dados</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="t2">aprendizado em Databricks e DE</span>
+          </div>
+        </div>
+
+        <div class="social">
+          <a class="lnk" href="mailto:abranjo.ramos@gmail.com" aria-label="E-mail">E-mail</a>
+          <a class="lnk" href="https://github.com/Andre-Abranjo-Ramos" target="_blank" rel="noopener">GitHub</a>
+          <a class="lnk" href="https://www.linkedin.com/in/andre-abranjo-ramos" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+     <section class="about section" id="sobre">
+      <div class="container">
+        <p class="eyebrow t2">Sobre</p>
+        <h2 class="h2">Quem sou eu</h2>
+
+        <div class="about-grid">
+          <figure class="about-photo">
+            <!-- Vou colocar uma foto futuramente no assets/foto-andre.jpg -->
+            <img src="assets/foto-andre.jpg" alt="Retrato de André Abranjo Ramos" width="400" height="400">
+          </figure>
+
+          <div class="about-text">
+            <p class="t2">
+              Sou Engenheiro de Dados na área de TI da Karsten S.A., onde atuo na construção
+              do Data Lake com Databricks e Delta Lake. Meu foco atual é evoluir continuamente
+              na engenharia de dados e nos fundamentos da plataforma Databricks.
+            </p>
+            <p class="t2">
+              Minha trajetória na empresa começou na produção em 2001 e passou por Custos,
+              Planejamento Comercial, Controladoria e Planejamento de Demanda — onde atuei como
+              Analista de Dados Sênior com previsão de demanda, S&OP e OTB.
+              Esse conhecimento do negócio é o que torna meu trabalho como engenheiro mais concreto.
+            </p>
+            <p class="t2">
+              O momento é de estudo intenso e construção de base sólida. Estou me preparando
+              para a certificação Databricks Certified Data Engineer Associate e aprofundando
+              em Python, SQL e arquitetura Medallion.
+            </p>
+          </div>
+        </div>
+
+        <!-- Perfil -->
+        <div class="profile card">
+          <h3 class="h3">Perfil</h3>
+          <dl class="profile-list">
+            <div><dt class="t2">Cargo</dt><dd class="t1">Engenheiro de Dados</dd></div>
+            <div><dt class="t2">Foco</dt><dd class="t1">Databricks, Delta Lake, Engenharia de Dados</dd></div>
+            <div><dt class="t2">Empresa</dt><dd class="t1">Karsten S.A.</dd></div>
+            <div><dt class="t2">Local</dt><dd class="t1">Blumenau · Santa Catarina · Brasil</dd></div>
+          </dl>
+        </div>
+
+        <!-- Habilidades -->
+        <div class="skills">
+          <h3 class="h3">Habilidades e tecnologias</h3>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4 class="t1">Plataforma e engenharia</h4>
+              <ul class="tag-list">
+                <li class="tag">Databricks</li>
+                <li class="tag">Delta Lake</li>
+                <li class="tag">Lakehouse</li>
+                <li class="tag">Engenharia de Dados</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h4 class="t1">Linguagens</h4>
+              <ul class="tag-list">
+                <li class="tag">Python</li>
+                <li class="tag">SQL</li>
+                <li class="tag">R</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h4 class="t1">BI e análise</h4>
+              <ul class="tag-list">
+                <li class="tag">Power BI</li>
+                <li class="tag">QlikSense</li>
+                <li class="tag">Qlik Cloud</li>
+                <li class="tag">Excel avançado</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h4 class="t1">Planejamento e negócio</h4>
+              <ul class="tag-list">
+                <li class="tag">S&OP</li>
+                <li class="tag">Previsão de demanda</li>
+                <li class="tag">OTB</li>
+                <li class="tag">Planejamento de estoque</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h4 class="t1">Sistemas e implantação</h4>
+              <ul class="tag-list">
+                <li class="tag">Dynamics AX</li>
+                <li class="tag">Handit</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h4 class="t1">Em aprendizado ativo</h4>
+              <ul class="tag-list">
+                <li class="tag">Arquitetura Medallion</li>
+                <li class="tag">MLflow</li>
+                <li class="tag">Unity Catalog</li>
+                <li class="tag">Git · GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         EXPERIÊNCIA
+         ======================================================== -->
+    <section class="resume section section-alt" id="experiencia">
+      <div class="container">
+        <p class="eyebrow t2">Experiência</p>
+        <h2 class="h2">Onde atuei</h2>
+        <p class="t2 section-lead">
+          Mais de duas décadas em uma única empresa, passando por áreas que hoje alimentam
+          as decisões que tomo como engenheiro de dados.
+        </p>
+
+        <ol class="timeline">
+          <li class="job">
+            <p class="t2 job-date">Ago 2026 – Presente</p>
+            <h3 class="h3">Engenheiro de Dados</h3>
+            <p class="t1 job-company">Karsten S.A. · TI</p>
+            <ul class="job-bullets">
+              <li class="t2">Construção do Data Lake com Databricks e Delta Lake (arquitetura Medallion).</li>
+              <li class="t2">Participação no Projeto Atlas — IA aplicada ao Planejamento de Demanda.</li>              
             </ul>
-        </aside>
+            <ul class="tag-list job-tech">
+              <li class="tag">Databricks</li>
+              <li class="tag">Delta Lake</li>
+              <li class="tag">Python</li>
+              <li class="tag">SQL</li>
+              <li class="tag">QlikCloud</li>
+            </ul>
+          </li>
 
+          <li class="job">
+            <p class="t2 job-date">Jan 2025 – Jul 2026</p>
+            <h3 class="h3">Analista de Dados Sênior</h3>
+            <p class="t1 job-company">Karsten S.A. · Planejamento e Demanda</p>
+            <ul class="job-bullets">
+              <li class="t2">Modelos de previsão de demanda, S&OP e planejamento de estoque.</li>
+              <li class="t2">Criação da ferramenta de OTB.</li>
+            </ul>
+            <ul class="tag-list job-tech">
+              <li class="tag">Python</li>           
+              <li class="tag">QlikSense</li>
+            </ul>
+          </li>
+
+          <li class="job">
+            <p class="t2 job-date">Fev 2023 – Dez 2024</p>
+            <h3 class="h3">Analista de Dados</h3>
+            <p class="t1 job-company">Karsten S.A. · Varejo</p>
+            <ul class="job-bullets">
+              <li class="t2">Construção de dashboards e relatórios de performance no QlikSense, por lojas e por canal varejo fisico e eletronico</li>
+            </ul>
+          </li>
+
+          <li class="job">
+            <p class="t2 job-date">Jul 2017 – Jan 2023</p>
+            <h3 class="h3">Analista de Controladoria</h3>
+            <p class="t1 job-company">Karsten S.A.</p>
+            <ul class="job-bullets">
+              <li class="t2">Implantação dos sistemas Dynamics AX e Handit.</li>
+              <li class="t2">Relatórios gerenciais, indicadores financeiros e operacionais.</li>
+            </ul>
+          </li>
+
+          <li class="job">
+            <p class="t2 job-date">2011 – Jun 2017</p>
+            <h3 class="h3">Analista de Planejamento Comercial</h3>
+            <p class="t1 job-company">Karsten S.A.</p>
+          </li>
+
+          <li class="job">
+            <p class="t2 job-date">Jan 2003 – Mai 2011</p>
+            <h3 class="h3">Analista de Custos</h3>
+            <p class="t1 job-company">Karsten S.A.</p>
+          </li>
+
+          <li class="job">
+            <p class="t2 job-date">Nov 2001 – Dez 2002</p>
+            <h3 class="h3">Auxiliar de Produção</h3>
+            <p class="t1 job-company">Karsten S.A.</p>
+          </li>
+        </ol>
+
+        <h3 class="h3 edu-title">Formação</h3>
+        <ol class="education">
+          <li class="edu card">
+            <p class="t2">2021 – 2023</p>
+            <h4 class="t1">MBA em Analytics e Big Data</h4>
+            <p class="t2">FIA Business School</p>
+          </li>
+          <li class="edu card">
+            <p class="t2">2002 – 2007</p>
+            <h4 class="t1">Administração de Empresas</h4>
+            <p class="t2">FURB</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <section>
-        <h2 id="projetos">Projetos</h2>
+    <section class="work section" id="projetos">
+      <div class="container">
+        <p class="eyebrow t2">Projetos</p>
+        <h2 class="h2">Projetos selecionados</h2>
+        <p class="t2 section-lead">
+          Trabalhos públicos e estudos em andamento. O portfólio cresce junto com o aprendizado. AInda em contrução e atualização de projetos que já participei.
+        </p>
 
-        <article>
-            <h3>Portfólio: Site Pessoal</h3>
-            <p>Desenvolvi um site pessoal para compartilhar minhas experiências e projetos. O site inclui uma seção de
-                blog onde escrevo sobre minhas aventuras no mundo da tecnologia.</p>
-        </article>
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+          <button class="btn filter is-active" type="button" data-filter="all">Todos</button>
+          <button class="btn filter" type="button" data-filter="visualizacao">Visualização</button>
+          <button class="btn filter" type="button" data-filter="engenharia">Engenharia</button>
+          <button class="btn filter" type="button" data-filter="estudo">Estudo</button>
+        </div>
 
-        <article>
-            <h3>Projeto 2: Aplicativo de Tarefas</h3>
-            <p>Criei um aplicativo de tarefas para ajudar as pessoas a organizarem suas atividades diárias. O aplicativo
-                possui uma interface intuitiva e recursos como lembretes e categorias personalizadas.</p>
-        </article>
+        <div class="work-grid">
+
+          <article class="project card" data-category="visualizacao">
+            <p class="project-context t2">Projeto de Conclusão · SENAI SCTEC</p>
+            <h3 class="h3">Visualização de Dados — Módulo 2</h3>
+            <dl class="project-detail">
+              <dt class="t1">O que é</dt>
+              <dd class="t2">Projeto final do curso de Visualização de Dados e BI do SENAI SCTEC, desenvolvido em Python com análise exploratória e criação de visualizações usando Streamlit.</dd>
+              <dt class="t1">Status</dt>
+              <dd class="t2">Enviado para aprovação — Nov 2026.</dd>
+            </dl>
+            <ul class="tag-list project-tech">
+              <li class="tag">Python</li>
+              <li class="tag">Visualização</li>
+              <li class="tag">BI</li>
+            </ul>
+            <a class="lnk project-link" href="https://github.com/Andre-Abranjo-Ramos/turma02-visualizacao-dados-Projeto-modulo-02" target="_blank" rel="noopener">Ver repositório →</a>
+          </article>
+
+          <article class="project card" data-category="engenharia">
+            <p class="project-context t2">Estudo pessoal · GitHub</p>
+            <h3 class="h3">Databricks &amp; Delta Lake — Notebooks</h3>
+            <dl class="project-detail">
+              <dt class="t1">O que é</dt>
+              <dd class="t2">Notebooks exploratórios de Delta Lake, arquitetura Medallion e pipelines de dados, produzidos durante os estudos de Databricks Fundamentals.</dd>
+              <dt class="t1">Status</dt>
+              <dd class="t2">Em andamento — Out/Nov/Dez 2026.</dd>
+            </dl>
+            <ul class="tag-list project-tech">
+              <li class="tag">Databricks</li>
+              <li class="tag">Delta Lake</li>
+              <li class="tag">Python</li>
+            </ul>
+            <a class="lnk project-link" href="https://github.com/Andre-Abranjo-Ramos" target="_blank" rel="noopener">Ver GitHub →</a>
+          </article>
+
+          <article class="project card" data-category="estudo">
+            <p class="project-context t2">Estudo pessoal · GitHub</p>
+            <h3 class="h3">Fundamentos de Engenharia de Dados</h3>
+            <dl class="project-detail">
+              <dt class="t1">O que é</dt>
+              <dd class="t2">Exercícios e projetos práticos do curso DSA Fundamentos de Engenharia de Dados, com foco em Python, SQL e conceitos de pipeline.</dd>
+              <dt class="t1">Status</dt>
+              <dd class="t2">Início previsto — Dez 2026.</dd>
+            </dl>
+            <ul class="tag-list project-tech">
+              <li class="tag">Python</li>
+              <li class="tag">SQL</li>
+              <li class="tag">Pipelines</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <section id="habilidades">
-        <h2>Habilidades e Tecnologias</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Tecnologia</th>
-                    <th>Nível</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>Intermediário</td>
-                    <td>Criação de estruturas de páginas web.</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Intermediário</td>
-                    <td>Estilização e layout de páginas web.</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Intermediário</td>
-                    <td>Desenvolvimento de interatividade e funcionalidades dinâmicas.</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Intermediário</td>
-                    <td>Programação para automação, análise de dados e desenvolvimento web.</td>
-                </tr>
-            </tbody>
-        </table>
+ 
+    <section class="services section section-alt" id="atuacao">
+      <div class="container">
+        <p class="eyebrow t2">Atuação</p>
+        <h2 class="h2">Onde me dedico hoje</h2>
 
-
+        <div class="services-grid">
+          <div class="card">
+            <h3 class="h3">Data Lake e Lakehouse</h3>
+            <p class="t2">Construção da base analítica em Databricks e Delta Lake com arquitetura Medallion (Bronze / Silver / Gold).</p>
+          </div>
+          <div class="card">
+            <h3 class="h3">Migração de legado</h3>
+            <p class="t2">Migração de dashboards e pipelines QlikSense para QlikCloud e Lakehouse.</p>
+          </div>          
+          <div class="card">
+            <h3 class="h3">IA aplicada ao negócio</h3>
+            <p class="t2">Participação no Projeto Atlas — IA no Planejamento de Demanda, ancorando o Data Lake em um caso de uso real.</p>
+          </div>
+          <div class="card">
+            <h3 class="h3">Ponte negócio–TI</h3>
+            <p class="t2">25 anos de vivência nas áreas da Karsten: traduzir necessidades das areas de negocio em dados utilizáveis.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 André. Todos os direitos reservados.</p>
 
-        <section>
-            <h2 id="contato">Contato</h2>
-            <p>Você pode entrar em contato comigo através do email: <a
-                    href="mailto:abranjo.ramos@gmail.com">abranjo.ramos@gmail.com</a><br>
-                Telefone: <a href="tel:+5547999092616">(47) 99909-2616</a></p>
+    <section class="contact section" id="contato">
+      <div class="container">
+        <p class="eyebrow t2">Contato</p>
+        <h2 class="h2">Vamos conversar</h2>
+        <p class="t2 section-lead">
+          Aberto a conversar sobre engenharia de dados, Databricks e IA aplicada à indústria.
+        </p>
 
-            <form action="">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required><br>
+        <div class="contact-grid">
+          <div class="card">
+            <h3 class="h3">LinkedIn</h3>
+            <p class="t2">Conexões profissionais e troca sobre carreira em dados.</p>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/andre-abranjo-ramos" target="_blank" rel="noopener">Conectar no LinkedIn</a>
+          </div>
+          <div class="card">
+            <h3 class="h3">GitHub</h3>
+            <p class="t2">Projetos de estudo, notebooks e repositórios públicos. Em construção.</p>
+            <a class="btn btn-primary" href="https://github.com/Andre-Abranjo-Ramos" target="_blank" rel="noopener">Ver no GitHub</a>
+          </div>
+        </div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
+        <div class="social">
+          <a class="lnk" href="https://www.linkedin.com/in/andre-abranjo-ramos" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="lnk" href="https://github.com/Andre-Abranjo-Ramos" target="_blank" rel="noopener">GitHub</a>
+          <a class="lnk" href="mailto:abranjo.ramos@gmail.com">abranjo.ramos@gmail.com</a>
+        </div>
+        <p class="t2" style="margin-top:12px">Blumenau · Santa Catarina · Brasil</p>
+      </div>
+    </section>
+  </main>
 
-                <label for="assunto">Assunto:</label>
-                <select name="assunto" id="assunto">
-                    <option value="orcamento">Informação</option>
-                    <option value="duvida">Sugestão</option>
-                    <option value="outro">Dúvida</option>
-                </select><br>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" cols="30" rows="10" required></textarea><br>
-                <input type="checkbox" id="inscricao" name="inscricao">
-                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro das novidades, projetos e dicas
-                    sobre tecnologia, carreira e desenvolvimento pessoal. Inscreva-se para receber atualizações
-                    diretamente no seu email</label><br>
-                <input type="submit" value="Enviar mensagem">
-            </form>
-
-        </section>
-
-    </footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="t2">© <span id="ano">2026</span> André Abranjo Ramos</p>
+      <a class="lnk" href="#topo">↑ Voltar ao topo</a>
+    </div>
+  </footer>
 
 </body>
-
 </html>
